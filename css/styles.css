@@ -19,7 +19,6 @@ body {
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
     background-color: var(--main-bg-cl);
-    width: 1600px;
 }
 
 img {
@@ -46,8 +45,8 @@ ul {
 
 .container {
     width: 1200px;
-    margin-right: 215px;
-    margin-left: 215px;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -114,8 +113,6 @@ ul {
 .header-list {
     display: flex;
     margin-left: 93px;
-    margin-top: 33px;
-    margin-bottom: 31px;
 }
 
 .header-item {
@@ -135,6 +132,7 @@ ul {
     line-height: 1.19;
     letter-spacing: 0.02em;
     color: var(--main-txt-cl);
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -263,7 +261,7 @@ ul {
     letter-spacing: 0.03em;
     line-height: 1.17;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .teammates-list{
@@ -283,10 +281,6 @@ ul {
     margin-right: 0;
 }
 
-.teammates-img {
-    margin-bottom: 30px;
-}
-
 .team-name {
     font-weight: 500;
     font-size: 16px;
@@ -302,14 +296,19 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     line-height: 1.19;
-    margin-bottom: 30px;
+}
+
+.teammates-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* Footer */
 
 .footer {
     background-color:#2F303A;
-    width: 1600px;
+    padding-top: 60px;
+    padding-bottom: 60px
 }
 
 .footer-logo {
@@ -320,11 +319,6 @@ ul {
     letter-spacing: 0.03em;
     line-height: 1.19;
     display: inline-block;
-    padding-top: 60px;
-}
-
-.address-list {
-    padding-bottom: 60px;
 }
 
 .address-link {
@@ -336,6 +330,10 @@ ul {
 
 .address-item {
     margin-top: 9px;
+}
+
+.address-item:first-child {
+    margin-top: 0;
 }
 
 .address-link:hover,
@@ -406,7 +404,6 @@ ul {
 
 .portfolio-item {
     background-color: var(--main-bg-cl);
-    border-bottom: 1px solid #EEEEEE;
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -437,4 +434,7 @@ ul {
 
 .portfolio-container {
     padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
